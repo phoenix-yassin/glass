@@ -1,0 +1,20 @@
+@charset "UTF-8";
+@import "variable";
+
+/*textarea*/
+.input-item{
+    width:9em;
+    input::-webkit-input-placeholder{
+        color:$blue;
+    }
+
+    .ratio-input{
+        background: url(../images/i-pencil.png) 0 center no-repeat;
+        padding-left:(16rem/12);
+        border:0;
+        color:$blue;
+        height:(14rem/12);
+        width:7.5em;
+        background-size: (14rem/12) ;
+    }
+}
