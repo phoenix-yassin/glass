@@ -1,0 +1,146 @@
+@charset "UTF-8";
+@import "_reset";
+.tit-sec {
+    >img {
+        width: 100%;
+    }
+}
+.rank-main {
+    margin: 0 (15rem/12);
+    background: #fff;
+    border-radius: (10rem/12);
+    .rank-top-3 {
+        background:url(../images/little_tri_angel.png) no-repeat;
+        background-size:100% auto;  
+    }
+    .top-item {
+        padding-bottom:(5rem/12);
+        .img-box {
+            position: relative;
+            padding: (10rem/12) (15rem/12) (5rem/12);
+        };
+        .person-pic {
+            width: 100%;
+            border-radius: 50%;
+        }
+        .person-position {
+            position: absolute;
+            right: (15rem/12);
+            bottom: (8rem/12);
+            z-index: 9;
+        }
+        .ranking {
+            position: relative;
+            width: (20rem/12);
+            height: (20rem/12);
+            border-radius: 50%;
+            text-align: center;
+            line-height: (20rem/12);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+        }
+        .ranking-val {
+            display: inline-block;
+            width: (15rem/12);
+            height: (15rem/12);
+            line-height: (13rem/12);
+            border: (1rem/12) solid $grey;
+            border-radius: 50%;
+            font-weight: bold;
+            text-align: center;
+        }
+        .decorate {
+            position: absolute;
+            top: (16rem/12);
+            left: 50%;
+            transform: translateX(-50%);
+            width: 1rem;
+            height: 1.2rem;
+            background: #ff7a52;
+            z-index: 8;
+        }
+        .tri-angle {
+            position: absolute;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            border-left: 0.5rem solid transparent;
+            border-right: 0.5rem solid transparent;
+            border-bottom: 0.5rem solid #fff;
+        }
+    }
+    .first {
+        .ranking {
+            background-color: #ededed;
+        }
+        .ranking-val {}
+    }
+    .second {
+        .ranking {
+            background: #fdca43;
+        }
+        .ranking-val{
+            color: #ff5927;
+            border-color: #ff5927;
+        }
+    }
+    .third {
+        .ranking {
+            background: #fea752;
+        }
+        .ranking-val{
+            color: #c96300;
+            border-color: #c96300;
+        }
+    }   
+    .first,
+    .third,
+    .second {
+        width: 33.333%;
+        float: left;
+    }
+    .second {
+        box-shadow: 0 -3px 3px rgba(0,0,0,0.5);
+        background-color: #fff;
+        border-radius: (10rem/12);
+        background-size: 100% auto;
+        transform: translateY(-20%);
+    }
+    .name,
+    .votes,
+    .person-id {
+        text-align: center;
+        overflow: hidden;
+        height: (16rem/12);
+        line-height: (16rem/12);
+    }
+    .votes {
+        color: $dark;
+    }
+}
+.rank-others{
+    .rank-item{position:relative;height: (39rem/12);line-height: (38rem/12); border-top:1px solid $grey;}
+.rank-no,.person-pic,.person-name,.person-id{float:left;}
+.rank-no{width:(100/640)*100%; text-align: center;}
+.person-id{height:(38rem/12);line-height: (38rem/12);}
+.person-pic{width:(30rem/12);margin-top:(4rem/12)}
+.person-name{margin-left:1.2rem;}
+.person-votes{position:absolute; right:(20rem/12);color:$dark; }
+    
+}
+.rank-fixed {
+    position: fixed;
+    background: #fff;
+    left:0;
+    bottom:0;
+    width:100%;
+        .rank-item{position:relative;height: (39rem/12);line-height: (38rem/12); border-top:1px solid $grey;}
+.rank-no,.person-pic,.person-name,.person-id{float:left;}
+.rank-no{width:(100/640)*100%; text-align: center;}
+.person-id{height:(38rem/12);line-height: (38rem/12);}
+.person-pic{width:(30rem/12);margin-top:(4rem/12)}
+.person-name{margin-left:1.2rem;}
+.person-votes{position:absolute; right:(20rem/12); color:$dark; }
+}

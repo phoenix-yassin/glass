@@ -1,0 +1,272 @@
+@charset "UTF-8";
+@import "_reset";
+.tit-sec {
+    position: relative;
+    >img {
+        width: 100%;
+    }
+    .title {
+        position: absolute;
+        z-index: 2;
+        height: (28rem/12);
+        line-height: (28rem/12);
+        border-radius: (28rem/12);
+        width: 70%;
+        background: #fff;
+        text-align: center;
+        color: $red;
+        bottom: (10rem/12);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.participant-sec {
+    width: 80%;
+    margin: (11rem/12) auto;
+    height: (2rem);
+    border-radius: 1rem;
+    line-height: 2rem;
+    color: #fff;
+    font-size: (14rem/12);
+    background: #ceab00;
+    text-align: center;
+    >span {
+        font-size: (14rem/12);
+        color: #ffdd00;
+    }
+}
+.search-sec {
+    * {
+        font-size: (14rem/12);
+        display: inline-block;
+        border-radius: (3rem/12);
+    }
+    position: relative;
+    height: (30rem/12);
+    width: (300/320)*100%;
+    margin: 0 auto;
+    >input {
+        color: $grey;
+        border: 0 none;
+        width: 70%;
+        height: (30rem/12);
+        padding-left: (10rem/12);
+        line-height: (30rem/12);
+    }
+    .search-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 25%;
+        height: 100%;
+        color: #fff;
+        background: #fa2c51;
+        line-height: (30rem/12);
+        text-align: center;
+    }
+}
+.candi-sec {
+    width: (300/320)*100%;
+    margin: (11rem)/12 auto (4rem);
+    * {
+        color: #fff;
+        overflow: hidden;
+    }
+    >.candi-item:nth-child(odd) {
+        margin-right: 0.99%;
+    }
+    @at-root .candi-item {
+        margin-bottom: (10rem/12);
+        float: left;
+        width: 49%;
+        border: 1px solid #f9493c;
+        position: relative;
+        >img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .cand-info {
+            background: #ff756b;
+            padding: (2rem/12) 0;
+            position: relative;
+            padding-left: 0.5rem;
+        }
+        .candi-name,
+        .candi-votes {
+            height: (14rem/12);
+        }
+        .candi-btn {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            font-size: 1.1rem;
+            width: (54rem/12);
+            background: #f9493c;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .candi-id {
+            position: absolute;
+            top: 0;
+            right: (7rem/12);
+            width: (39rem/12);
+            overflow: hidden;
+            height: (2rem);
+            background: url("../images/banner_05.png") no-repeat;
+            background-size: (39rem/12) (2rem);
+            text-align: center;
+            padding-top: 0.3rem;
+        }
+    }
+}
+footer {
+    width: 100%;
+    height: (4rem);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 11;
+    display: flex;
+    .ft-item {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: (14rem/12);
+    }
+    .ft-item-1 {
+        background: #1abc9c;
+    }
+    .ft-item-2 {
+        background: #e74c3c;
+    }
+    .ft-item-3 {
+        background: #3498db;
+    }
+    .ft-item-4 {
+        background: #f49d3f;
+    }
+    .ft-item-5 {
+        background: #9b59b6;
+    }
+}
+.weixin-share-layer {
+    position: absolute;
+    right: 5%;
+    top: 0;
+    img {
+        width: (132rem/12);
+    }
+}
+.focus-layer {
+    width: (234/320)*100%;
+    margin:5% auto;
+    img{width:100%;border-radius: (5rem/12);}
+}
+.add-person-info-layer {}
+.base-layer {
+    background: #fff;   
+    width: (590/640)*100%;    
+    margin:0 auto;
+    .layer-tit {
+        font-size: (16rem/12);
+        color: #666;
+        text-align: center;
+        height: (40rem/12);
+        line-height: (40rem/12);
+        border-bottom: 1px solid #cdcdcd;
+    }
+    .layer-form {
+        margin: 0 (10rem/12);
+    }
+    .form-item {
+        position: relative;
+        margin-top: (13rem/12);
+    }
+    .item-label {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: (55rem/12);
+        height: (27rem/12);
+        line-height: (27rem/12);
+        color: $dark;
+        text-align: right;
+    }
+    .item-content {
+        margin-left: 5.5rem;
+        color: #d3d3de;
+    }
+    .add-pic {
+        display: inline-block;
+        width: (67rem/12);
+        height: (67rem/12);
+        border: (1rem/12) solid #d7d7d7;
+        background: url("../images/add_03.png") #fff center center no-repeat;
+        background-size: 55%;
+    }
+    .add-pic-info {
+        display: inline-block;
+        height: (67rem/12);
+        line-height: (67rem/12);
+        vertical-align: top;
+    }
+    .form-input {
+        height: (27rem/12);
+        line-height: (27rem/12);
+        width: (208rem/12);
+        border: (1rem/12) solid #d7d7d7;
+        padding-left: (10rem/12);
+    }
+    .form-btns {
+        width: (208rem/12);
+    }
+    .btn {
+        width: (100rem/12);
+        height: (30rem/12);
+        border-radius: (4rem/12);
+        text-align: center;
+        line-height: (30rem/12);
+        color: #fff;
+    }
+    .btn-l {
+        float: left;
+        background: #fa2c51;
+    }
+    .btn-r {
+        float: right;
+        background: #d3d3d3;
+    }
+    .layer-tips {
+        margin-top: 1.2rem;
+        padding-left: 1rem;
+        color: #ff0000;
+        line-height: (15rem/12);
+        padding-bottom:(16rem/12);   
+    }
+    .form-single-item{
+        text-align:center; ;
+    }
+    .btn-single {
+        display: inline-block;
+        background: #fa2c51;
+    }
+    .single-info{
+        font-size: (18rem/12);
+        color:$dark;
+    }
+}
+/**sucess layer**/
+.success-layer {
+    .icon-success{
+        display: inline-block;
+        width:(60rem/12);
+        padding-top:0.5rem;
+    }
+
+}

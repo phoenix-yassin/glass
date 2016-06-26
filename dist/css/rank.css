@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/* -----------H-ui前端框架--H-ui.reset.css v1.2---------------*/
+/*0.563 0.625*/
+/*0.72 0.75*/
+/*0.844 0.875*/
+/*0.9375 1*/
+@media only screen and (min-width: 320px) and (max-width: 359.9px) { html { font-size: 12px; } }
+@media only screen and (min-width: 360px) and (max-width: 409.9px) { html { font-size: 14px; } }
+@media only screen and (min-width: 410px) and (max-width: 459.9px) { html { font-size: 16px; } }
+@media only screen and (min-width: 460px) and (max-width: 539.9px) { html { font-size: 19px; } }
+@media only screen and (min-width: 540px) { html { font-size: 22px; } }
+body, h1, h2, h3, h4, h5, h6, hr, p, iframe, dl, dt, dd, ul, ol, li, pre, form, button, input, textarea, th, td, fieldset { margin: 0; padding: 0; font-family: sans-serif, arial, "Microsoft Yahei", Verdana; line-height: 1; color: #7d7d7d; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; }
+
+ul, ol, dl { list-style-type: none; }
+
+html * { font-size: 1rem; word-wrap: break-word; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-tap-highlight-color: rgba(255, 255, 255, 0); outline: 0; }
+
+input, button, textarea, select, optgroup, option, em { font-family: inherit; font-size: inherit; font-style: inherit; font-weight: inherit; }
+
+input, button, textarea { overflow: visible; vertical-align: middle; outline: none; -webkit-appearance: none; border-radius: 0; }
+
+body { min-width: 320px; overflow-x: hidden; overflow-y: auto; background: #eecf37; -webkit-overflow-scrolling: touch; }
+
+h1, h2, h3, h4, h5, h6 { font-size: 100%; }
+
+a, area { outline: none; }
+
+a { color: #252525; text-decoration: none !important; }
+
+a :focus, a :hover, a :active, :focus { outline: none; }
+
+img { border: 0; vertical-align: middle; }
+
+a img, img { -ms-interpolation-mode: bicubic; }
+
+a:vistied { text-decoration: none; }
+
+/* 重置table属性 */
+table { width: 100%; border-collapse: collapse; border-spacing: 0; }
+
+/*HTML5 reset*/
+header, footer, section, aside, details, menu, article, section, nav, address, hgroup, figure, figcaption, legend { display: block; margin: 0; padding: 0; }
+
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+.fr { float: right; }
+
+.fl { float: left; }
+
+.txt-l { text-align: left; }
+
+.txt-r { text-align: right; }
+
+.red { color: #cb0001; }
+
+.tit-sec > img { width: 100%; }
+
+.rank-main { margin: 0 1.25rem; background: #fff; border-radius: 0.8333rem; }
+.rank-main .rank-top-3 { background: url(../images/little_tri_angel.png) no-repeat; -webkit-background-size: 100% auto; background-size: 100% auto; }
+.rank-main .top-item { padding-bottom: 0.4167rem; }
+.rank-main .top-item .img-box { position: relative; padding: 0.8333rem 1.25rem 0.4167rem; }
+.rank-main .top-item .person-pic { width: 100%; border-radius: 50%; }
+.rank-main .top-item .person-position { position: absolute; right: 1.25rem; bottom: 0.6667rem; z-index: 9; }
+.rank-main .top-item .ranking { position: relative; width: 1.6667rem; height: 1.6667rem; border-radius: 50%; text-align: center; line-height: 1.6667rem; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; z-index: 10; }
+.rank-main .top-item .ranking-val { display: inline-block; width: 1.25rem; height: 1.25rem; line-height: 1.0833rem; border: 0.0833rem solid #7d7d7d; border-radius: 50%; font-weight: bold; text-align: center; }
+.rank-main .top-item .decorate { position: absolute; top: 1.3333rem; left: 50%; -webkit-transform: translateX(-50%); -o-transform: translateX(-50%); transform: translateX(-50%); width: 1rem; height: 1.2rem; background: #ff7a52; z-index: 8; }
+.rank-main .top-item .tri-angle { position: absolute; bottom: 0; width: 0; height: 0; border-left: 0.5rem solid transparent; border-right: 0.5rem solid transparent; border-bottom: 0.5rem solid #fff; }
+.rank-main .first .ranking { background-color: #ededed; }
+.rank-main .second .ranking { background: #fdca43; }
+.rank-main .second .ranking-val { color: #ff5927; border-color: #ff5927; }
+.rank-main .third .ranking { background: #fea752; }
+.rank-main .third .ranking-val { color: #c96300; border-color: #c96300; }
+.rank-main .first, .rank-main .third, .rank-main .second { width: 33.333%; float: left; }
+.rank-main .second { -webkit-box-shadow: 0 -3px 3px rgba(0, 0, 0, 0.5); box-shadow: 0 -3px 3px rgba(0, 0, 0, 0.5); background-color: #fff; border-radius: 0.8333rem; -webkit-background-size: 100% auto; background-size: 100% auto; -webkit-transform: translateY(-20%); -o-transform: translateY(-20%); transform: translateY(-20%); }
+.rank-main .name, .rank-main .votes, .rank-main .person-id { text-align: center; overflow: hidden; height: 1.3333rem; line-height: 1.3333rem; }
+.rank-main .votes { color: #252525; }
+
+.rank-others .rank-item { position: relative; height: 3.25rem; line-height: 3.1667rem; border-top: 1px solid #7d7d7d; }
+.rank-others .rank-no, .rank-others .person-pic, .rank-others .person-name, .rank-others .person-id { float: left; }
+.rank-others .rank-no { width: 15.625%; text-align: center; }
+.rank-others .person-id { height: 3.1667rem; line-height: 3.1667rem; }
+.rank-others .person-pic { width: 2.5rem; margin-top: 0.3333rem; }
+.rank-others .person-name { margin-left: 1.2rem; }
+.rank-others .person-votes { position: absolute; right: 1.6667rem; color: #252525; }
+
+.rank-fixed { position: fixed; background: #fff; left: 0; bottom: 0; width: 100%; }
+.rank-fixed .rank-item { position: relative; height: 3.25rem; line-height: 3.1667rem; border-top: 1px solid #7d7d7d; }
+.rank-fixed .rank-no, .rank-fixed .person-pic, .rank-fixed .person-name, .rank-fixed .person-id { float: left; }
+.rank-fixed .rank-no { width: 15.625%; text-align: center; }
+.rank-fixed .person-id { height: 3.1667rem; line-height: 3.1667rem; }
+.rank-fixed .person-pic { width: 2.5rem; margin-top: 0.3333rem; }
+.rank-fixed .person-name { margin-left: 1.2rem; }
+.rank-fixed .person-votes { position: absolute; right: 1.6667rem; color: #252525; }

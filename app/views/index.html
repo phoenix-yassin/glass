@@ -1,102 +1,120 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="utf-8">
-    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
-    <meta content="yes" name="apple-mobile-web-app-capable">
-    <meta content="black" name="apple-mobile-web-app-status-bar-style">
-    <meta content="telephone=no,email=no" name="format-detection">
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no,email=no" name="format-detection">
 
-    <link rel="stylesheet" href="../css/reset.css">
-    <style type="text/css">
+		<link rel="stylesheet" href="../css/votes.css">
+		<style type="text/css">
 
-    </style>
-</head>
+		</style>
+	</head>
 
-<body>
-<div class="fle_col">
- <header></header>
- <article class="main">
-     <section class="carousel">
-         <img src="../images/tem_index_carousel.jpg">
-     </section>
-    <section class=" classify sec_item">
-        <div class="sec_header"></div>
-        <div class="sec_main">asdf
-        asdf
-        asdf
-        as ef
-        asdfasdf
-        asdf</div>
-    </section>
-    <section class="hot sec_item">
-    <div class="sec_header"></div>
-    <div class="sec_main">asdfasd
-    asdfasd
-    asdfasd
-    asdfasd
-    asdfasd
-    asdfasd
-     asdfasd
-    asdfasd
-    asdfasd
+	<body style="background: #fff;">
+		<div class="fle_col">
+			<header></header>
+			<article class="main">
+				<section class="weixin-share-layer"><img src="../images/share.png"/></section>
+				<section class="focus-layer">
+					<img src="../images/focus-3_03.jpg" />
+				</section>
+				<section class="base-layer add-person-info-layer">
+					<div class="layer-tit">填写个人参赛信息</div>
+					<div class="layer-form">
+						<div class="form-item">
+							<div class="item-label">参数照片</div>
+							<div class="item-content">
+								<div class="add-pic"></div>
+								<div class="add-pic-info">请上传参赛照片</div>
+							</div>
+						</div>
+						<div class="form-item">
+							<div class="item-label">姓名</div>
+							<div class="item-content">
+								<input class="form-input" type="text" name="" placeholder="请输入真实姓名" value="" />
+							</div>
+						</div>
+						<div class="form-item">
+							<div class="item-label">联系电话</div>
+							<div class="item-content">
+								<input class="form-input" type="telephone " name="" placeholder="请输入您的手机号" value="" />
+							</div>
+						</div>
+						<div class="form-item">
+							<div class="item-label"></div>
+							<div class="item-content">
+								<div class="form-btns clearfix">
+									<div class="btn btn-l">确定</div>
+									<div class="btn btn-r">取消</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="layer-tips">
+						温馨提示：尊敬的用户，您输入的用户名和手机号，是为后续 参与领奖的凭证，请认真填写。
 
-    asdfasd
-    asdfasd
-     asdfasd
-    asdfasd
-    asdfasd
-    asdfasd
-    asdfasd
-     asdfasd
-    asdfasd
-    asdfasd
-    asdfasd
-    asdfasd
-     asdfasd
-    asdfasd
-    asdfasd
-    asdfasd
-    asdfasdasdfasd 
-</div>
-    </section>
-    <section class="promotion sec_item">
-     <div class="sec_header"></div>
-    <div class="sec_main">asdfasd
-    asdfasd
-    asdfasd
-    asdfasd
-    asdfasd
-    asdfasd
-     asdfasd
-    asdfasd
-    asdfasd
+					</div>
+				</section>
 
-    asdfasd
-    asdfasd
-     asdfasd
-    asdfasd
-    asdfasd
-    asdfasd
-    asdfasd
-     asdfasd
-    asdfasd
-    asdfasd
-    asdfasd
-    asdfasd
-     asdfasd
-    asdfasd
-    asdfasd
-    asdfasd
-    asdfasdasdfasd 
-</div>
-    </section>
+				<section class=" base-layer success-layer">
+					<div class="layer-tit">温馨提示</div>
+					<div class="layer-form">
+						<div class="form-item">
+							<div class="form-single-item">
+								<img src="../images/icon-success_03.png" class="icon-success"></img>
+							</div>
+						</div>
+						<div class="form-item">
+							<div class="form-single-item">
+								<div class="single-info">恭喜您，报名成功！</div>
+							</div>
+						</div>
+						<div class="form-item">
+							<div class="form-single-item">
+								<div class="btn btn-single">立即分享</div>
+							</div>
+						</div>
 
+					</div>
+					<div class="layer-tips">
+						温馨提示：上传照片需审核，请耐心等待，您可 邀请更多好友和你互投
+					</div>
+				</section>
 
- </article>
- <footer></footer>
-</div>    
-</body>
+			</article>
+
+			<footer></footer>
+		</div>
+		<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="../js/layer.js"></script>
+		<script>
+			/*	var share_layer = layer.open({
+				    type: 1,
+				    content: '<section class="weixin-share-layer"><img src="../images/share.png"/></section>',
+				    style: 'position:fixed; left:0; top:0; width:100%; height:9rem	; border:none; background:rgba(0,0,0,0)'
+				});
+				var focus_layer = layer.open({
+				    type: 1,
+				    content: '<section class="focus-layer"><img src="../images/focus-3_03.jpg"/></section>',
+				    style: 'position:fixed; left:0; top:0; width:100%; height:9rem	; border:none; background:rgba(0,0,0,0)'
+				});*/
+			/*	var add_person_info_layer_html = '<section class="base-layer add-person-info-layer"><div class="layer-tit">填写个人参赛信息</div><div class="layer-form"><div class="form-item"><div class="item-label">参数照片</div><div class="item-content"><div class="add-pic"></div><div class="add-pic-info">请上传参赛照片</div></div></div><div class="form-item"><div class="item-label">姓名</div><div class="item-content"><input class="form-input" type="text" name="" placeholder="请输入真实姓名" value=""></div></div><div class="form-item"><div class="item-label">联系电话</div><div class="item-content"><input class="form-input" type="telephone " name="" placeholder="请输入您的手机号" value=""></div></div><div class="form-item"><div class="item-label"></div><div class="item-content"><div class="form-btns clearfix"><div class="btn btn-l">确定</div><div class="btn btn-r">取消</div></div></div></div></div><div class="layer-tips">温馨提示：尊敬的用户，您输入的用户名和手机号，是为后续 参与领奖的凭证，请认真填写。</div></section>';
+				var add_person_info_layer = layer.open({
+				    type: 1,
+				    content: add_person_info_layer_html,
+				    style: ' width:100%; border:none; background:rgba(0,0,0,0);'
+				});*/
+			var success_layer_html = '<section class="base-layer success-layer"><div class="layer-tit">温馨提示</div><div class="layer-form"><div class="form-item"><div class="form-single-item"><img src="../images/icon-success_03.png" class="icon-success"></div></div><div class="form-item"><div class="form-single-item"><div class="single-info">恭喜您，报名成功！</div></div></div><div class="form-item"><div class="form-single-item"><div class="btn btn-single">立即分享</div></div></div></div><div class="layer-tips">温馨提示：上传照片需审核，请耐心等待，您可 邀请更多好友和你互投</div></section>';
+			var success_layer = layer.open({
+				type: 1,
+				content: success_layer_html,
+				style: ' width:100%; border:none; background:rgba(0,0,0,0);'
+			});
+		</script>
+	</body>
 
 </html>
