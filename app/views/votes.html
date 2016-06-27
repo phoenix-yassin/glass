@@ -72,7 +72,68 @@
 
 		<script src="../js/jquery-1.8.3.min.js" charset="utf-8"></script>
 		<script src="../js/layer.js"></script>
+		<script>
+		$("body").on("click",".ft-item-1",function(){
+			shareLayer();
+		})
+		$("body").on("click",".ft-item-2",function(){
+			focusLayer();
+		})
+		$("body").on("click",".ft-item-3",function(){
+			successLayer();
+		})
+		$("body").on("click",".ft-item-4",function(){
+			addPersonInfoLayer();
+		})
+		function shareLayer(){
+			var share_layer = layer.open({
+				    type: 1,
+				    content: '<section class="weixin-share-layer"><img src="../images/share.png"/></section>',
+				    style: 'position:fixed; left:0; top:0; width:100%; height:9rem	; border:none; background:rgba(0,0,0,0)'
+				});
+				return share_layer;
+		}
+		function focusLayer(){
+			var focus_layer = layer.open({
+				    type: 1,
+				    content: '<section class="focus-layer"><img src="../images/focus-3_03.jpg"/></section>',
+				    style: 'position:fixed; left:0; top:0; width:100%; height:9rem	; border:none; background:rgba(0,0,0,0)'
+				});
+			return focus_layer;
+		}
+		function addPersonInfoLayer(){
+			var add_person_info_layer_html = '<section class="base-layer add-person-info-layer"><div class="layer-tit">填写个人参赛信息</div><div class="layer-form"><div class="form-item"><div class="item-label">参赛照片</div><div class="item-content"><div class="add-pic"></div><div class="add-pic-info">请上传参赛照片</div></div></div><div class="form-item"><div class="item-label">姓名</div><div class="item-content"><input class="form-input" type="text" name="" placeholder="请输入真实姓名" value=""></div></div><div class="form-item"><div class="item-label">联系电话</div><div class="item-content"><input class="form-input" type="telephone " name="" placeholder="请输入您的手机号" value=""></div></div><div class="form-item"><div class="item-label"></div><div class="item-content"><div class="form-btns clearfix"><div class="btn btn-l">确定</div><div class="btn btn-r">取消</div></div></div></div></div><div class="layer-tips">温馨提示：尊敬的用户，您输入的用户名和手机号，是为后续 参与领奖的凭证，请认真填写。</div></section>';
+				var add_person_info_layer = layer.open({
+				    type: 1,
+				    content: add_person_info_layer_html,
+				    style: ' width:100%; border:none; background:rgba(0,0,0,0);'
+				});
+				return add_person_info_layer;
+		}
+	
+		function successLayer(){
+			var success_layer_html = '<section class="base-layer success-layer"><div class="layer-tit">温馨提示</div><div class="layer-form"><div class="form-item"><div class="form-single-item"><img src="../images/icon-success_03.png" class="icon-success"></div></div><div class="form-item"><div class="form-single-item"><div class="single-info">恭喜您，报名成功！</div></div></div><div class="form-item"><div class="form-single-item"><div class="btn btn-single">立即分享</div></div></div></div><div class="layer-tips">温馨提示：上传照片需审核，请耐心等待，您可邀请更多好友和你互投</div></section>';
+			var success_layer = layer.open({
+				type: 1,
+				content: success_layer_html,
+				style: ' width:100%; border:none; background:rgba(0,0,0,0);',
+				success: shareBtn
+			});
+			return successLayer;
+		}
+		function shareBtn(){
+			$("body").on("click",".success-layer .btn-single",function(){
+				closeAllLayer();
+				setTimeout(focusLayer,0);
+			});
+		}
+		function closeAllLayer(){
+			layer.closeAll();
+		}
+			
+			
 
+		</script>
 	</body>
 
 </html>
