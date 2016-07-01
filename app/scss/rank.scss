@@ -11,7 +11,8 @@
     border-radius: (10rem/12);
     .rank-top-3 {
         background:url(../images/little_tri_angel.png) no-repeat;
-        background-size:100% auto;  
+        background-size:100% auto; 
+        min-height: (139rem/12); 
     }
     .top-item {
         padding-bottom:(5rem/12);
@@ -95,13 +96,20 @@
             border-color: #c96300;
         }
     }   
-    .first,
-    .third,
-    .second {
+    .first
+     {
         width: 33.333%;
         float: left;
     }
+    .third
+     {
+        width: 33.333%;
+        float: right;
+    }
     .second {
+        position:absolute;
+        left:33.333%;
+        width:33.333%;        
         box-shadow: 0 -3px 3px rgba(0,0,0,0.5);
         background-color: #fff;
         border-radius: (10rem/12);
