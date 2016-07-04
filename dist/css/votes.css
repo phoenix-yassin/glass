@@ -89,13 +89,13 @@ footer .ft-item-5 { background: #9b59b6; }
 .focus-layer { width: 73.125%; margin: 5% auto; }
 .focus-layer img { width: 100%; border-radius: 0.4167rem; }
 
-.base-layer { background: #fff; width: 92.1875%; margin: 0 auto; }
+.base-layer { background: #fff; width: 92.1875%; margin: 0 auto; overflow: hidden; }
 .base-layer .layer-tit { font-size: 1.3333rem; color: #666; text-align: center; height: 3.3333rem; line-height: 3.3333rem; border-bottom: 1px solid #cdcdcd; }
 .base-layer .layer-form { margin: 0 0.8333rem; }
 .base-layer .form-item { position: relative; margin-top: 1.0833rem; }
 .base-layer .item-label { position: absolute; left: 0; top: 0; width: 4.5833rem; height: 2.25rem; line-height: 2.25rem; color: #252525; text-align: right; }
 .base-layer .item-content { margin-left: 5.5rem; color: #d3d3de; }
-.base-layer .add-pic { display: inline-block; width: 5.5833rem; height: 5.5833rem; border: 0.0833rem solid #d7d7d7; background: url("../images/add_03.png") #fff center center no-repeat; -webkit-background-size: 55% 55%; background-size: 55%; }
+.base-layer .add-pic { display: inline-block; width: 5.5833rem; height: 5.5833rem; border: 0.0833rem solid #d7d7d7; background: url("../images/add_03.png") #fff center center no-repeat; -webkit-background-size: 55% 55%; background-size: 55%; overflow: hidden; }
 .base-layer .add-pic-info { display: inline-block; height: 5.5833rem; line-height: 5.5833rem; vertical-align: top; }
 .base-layer .form-input { height: 2.25rem; line-height: 2.25rem; width: 17.3333rem; border: 0.0833rem solid #d7d7d7; padding-left: 0.8333rem; }
 .base-layer .form-btns { width: 17.3333rem; }

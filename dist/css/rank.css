@@ -59,7 +59,7 @@ header, footer, section, aside, details, menu, article, section, nav, address, h
 .rank-main .rank-top-3 { background: url(../images/little_tri_angel.png) no-repeat; -webkit-background-size: 100% auto; background-size: 100% auto; min-height: 11.5833rem; }
 .rank-main .top-item { padding-bottom: 0.4167rem; }
 .rank-main .top-item .img-box { position: relative; padding: 0.8333rem 1.25rem 0.4167rem; }
-.rank-main .top-item .person-pic { width: 100%; border-radius: 50%; }
+.rank-main .top-item .person-pic { width: 100%; height: 100%; border-radius: 50%; overflow: hidden; }
 .rank-main .top-item .person-position { position: absolute; right: 1.25rem; bottom: 0.6667rem; z-index: 9; }
 .rank-main .top-item .ranking { position: relative; width: 1.6667rem; height: 1.6667rem; border-radius: 50%; text-align: center; line-height: 1.6667rem; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; z-index: 10; }
 .rank-main .top-item .ranking-val { display: inline-block; width: 1.25rem; height: 1.25rem; line-height: 1.0833rem; border: 0.0833rem solid #7d7d7d; border-radius: 50%; font-weight: bold; text-align: center; }
@@ -80,7 +80,7 @@ header, footer, section, aside, details, menu, article, section, nav, address, h
 .rank-others .rank-no, .rank-others .person-pic, .rank-others .person-name, .rank-others .person-id { float: left; }
 .rank-others .rank-no { width: 15.625%; text-align: center; }
 .rank-others .person-id { height: 3.1667rem; line-height: 3.1667rem; }
-.rank-others .person-pic { width: 2.5rem; margin-top: 0.3333rem; }
+.rank-others .person-pic { width: 2.5rem; height: 2.5rem; overflow: hidden; margin-top: 0.3333rem; }
 .rank-others .person-name { margin-left: 1.2rem; }
 .rank-others .person-votes { position: absolute; right: 1.6667rem; color: #252525; }
 
@@ -89,6 +89,6 @@ header, footer, section, aside, details, menu, article, section, nav, address, h
 .rank-fixed .rank-no, .rank-fixed .person-pic, .rank-fixed .person-name, .rank-fixed .person-id { float: left; }
 .rank-fixed .rank-no { width: 15.625%; text-align: center; }
 .rank-fixed .person-id { height: 3.1667rem; line-height: 3.1667rem; }
-.rank-fixed .person-pic { width: 2.5rem; margin-top: 0.3333rem; }
+.rank-fixed .person-pic { width: 2.5rem; height: 2.5rem; overflow: hidden; margin-top: 0.3333rem; }
 .rank-fixed .person-name { margin-left: 1.2rem; }
 .rank-fixed .person-votes { position: absolute; right: 1.6667rem; color: #252525; }

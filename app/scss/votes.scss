@@ -173,6 +173,7 @@ footer {
     background: #fff;   
     width: (590/640)*100%;    
     margin:0 auto;
+    overflow: hidden;
     .layer-tit {
         font-size: (16rem/12);
         color: #666;
@@ -209,6 +210,7 @@ footer {
         border: (1rem/12) solid #d7d7d7;
         background: url("../images/add_03.png") #fff center center no-repeat;
         background-size: 55%;
+        overflow: hidden;
     }
     .add-pic-info {
         display: inline-block;
