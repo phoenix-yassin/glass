@@ -131,7 +131,23 @@
 		function closeAllLayer(){
 			layer.closeAll();
 		}
+		/*点击头像列表部分效果*/
+		;(function(){
+			$("body").on("click", ".candi-sec .candi-item", function(){
+				$(".candi-item.selected").removeClass("selected");
+				$(this).addClass("selected");
+			});
 			
+		})();
+		/*点击底部效果*/
+		;(function(){
+			$("body").on("click", "footer .ft-item", function(){
+				$(".ft-item.selected").removeClass("selected");
+				$(this).addClass("selected");
+			});
+			
+		})();
+		
 			
 
 		</script>
